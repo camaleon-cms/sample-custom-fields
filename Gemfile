@@ -53,7 +53,7 @@ end
 #gem 'sprockets', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 
-gem 'camaleon_cms', path: '/www/rails/camaleon-gem/camaleon-cms-gem'
+gem 'camaleon_cms', github: 'owen2345/camaleon-cms'
 # gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
 #gem 'draper', github: 'audionerd/draper', branch: 'rails5'
 gem 'draper', github: 'drapergem/draper'
@@ -66,6 +66,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #################### Camaleon CMS include all gems for plugins and themes #################### 
 require './lib/plugin_routes' 
 instance_eval(PluginRoutes.draw_gems)
-
-gem 'vzaar_uploader'#, path:  'apps/plugins/vzaar_uploader'
-gem 'vzaar_api', git: 'git@github.com:vzaar/vzaar-api-ruby.git', branch: 'version-2.0.0-alpha'
